@@ -4,6 +4,8 @@ const ProjectsDB = require('./helpers/projectsHelper.js');
 
 const router = express.Router();
 
+
+//√√√√√
 router.get('/', (req, res) => {
     ProjectsDB.find()
     .then(projects => {
@@ -15,6 +17,9 @@ router.get('/', (req, res) => {
     });
 });
 
+
+
+//√√√√
 router.get('/:id', (req, res) => {
     const {id} = req.params; 
     ProjectsDB.findById(id)

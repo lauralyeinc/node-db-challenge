@@ -4,6 +4,8 @@ const resourcesDB = require('./helpers/resourcesHelper');
 
 const router = express.Router();
 
+
+//√√√√√√
 router.get('/', (req, res) => {
     resourcesDB.find()
         .then(resources => {
@@ -15,6 +17,8 @@ router.get('/', (req, res) => {
         });
 });
 
+
+// √√√√√ 6 
 router.post('/', (req, res) => {
     resourcesDB.add(req.body)
         .then(newResource => {

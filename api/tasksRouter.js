@@ -2,6 +2,10 @@ const express = require('express');
 
 const TaskDB = require('./helpers/tasksHelper');
 
+const router = express.Router();
+
+
+//√√√√√√ 
 router.get('/', (req, res) => {
     TaskDB.find()
         .then(tasks => {
@@ -14,6 +18,8 @@ router.get('/', (req, res) => {
 });
 
 
+
+// √√√√√ 9 
 router.post('/', (req, res)  => {
     TaskDB.add(req.body)
         .then(newTask => {
@@ -25,7 +31,4 @@ router.post('/', (req, res)  => {
         });
 });
 
-module.exports = {
-    get, 
-    post 
-};
+module.exports = router; 
