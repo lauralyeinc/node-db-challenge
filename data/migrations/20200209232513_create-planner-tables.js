@@ -1,4 +1,5 @@
 
+
 exports.up = function(knex) {
     return (knex.schema 
         .createTable("projects", tbl => {
@@ -42,7 +43,7 @@ exports.up = function(knex) {
 exports.down = function(knex) {
     return knex.schema
         .dropTableIfExists("projects_resources")
+        .dropTableIfExists("tasks")
         .dropTableIfExists("resources")
-        .dropTableIfExists("task")
         .dropTableIfExists("projects"); 
 };
