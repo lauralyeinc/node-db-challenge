@@ -7,9 +7,9 @@ module.exports = {
     client: 'sqlite3',
     connection: {
       filename: './data/agenda.db3'
+    },
+    migrations: {
+      directory: './data/migrations'
     }
   },
-  migrations: {
-    directory: './data/migrations'
-  }
 };
