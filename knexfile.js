@@ -6,8 +6,10 @@ module.exports = {
     useNullAsDefault: true, 
     client: 'sqlite3',
     connection: {
-      filename: './data/projects.db3'
+      filename: './data/agenda.db3'
     }
   },
-
+  migrations: {
+    directory: './data/migrations'
+  }
 };
