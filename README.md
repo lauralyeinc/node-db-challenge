@@ -40,11 +40,16 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+Relational Databases are a set of tables that store data.  The database is set up with colums and rows.  SQL is the language used to read, access and build apon the database.  It is also not a coding lanuage, so it doesn't show up in VSC. Have to use a graphical tool to view it. 
+
 - [ ] Why do tables need a `primary key`?
+It allows each row or record have a main id, to be able to tell a difference between the same record in that table or be able to be used in another table as a foregin key. 
 
 - [ ] What is the name given to a table column that references the primary key on another table.
+foreign key 
 
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+Intermediary table that holds foregin keys that references the primary key on related tables. 
 
 ## Minimum Viable Product
 
