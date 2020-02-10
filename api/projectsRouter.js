@@ -32,4 +32,17 @@ router.get('/:id', (req, res) => {
     });
 });
 
+
+//√√√√ 6 
+router.post('/', (req, res) => {
+    ProjectsDB.add(req.body)
+        .then(newProject => {
+            res.status(200).json(newProject);
+        })
+        .catch(error => {
+            console.log(error, "error");
+            res.status(500).json({message: 'Unable to add new project'});
+        });
+});
+
 module.exports = router; 
